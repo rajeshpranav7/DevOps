@@ -17,3 +17,10 @@ spec:
         image: arn:aws:ecr:us-west-1:539935451710:repository/devops-eks/appointment-app:latest
         ports:
         - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
