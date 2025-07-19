@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appointment-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: appointment-app
+  template:
+    metadata:
+      labels:
+        app: appointment-app
+    spec:
+      containers:
+      - name: app
+        image: arn:aws:ecr:us-west-1:539935451710:repository/devops-eks/appointment-app:latest
+        ports:
+        - containerPort: 3000

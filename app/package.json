@@ -1,0 +1,11 @@
+{
+  "name": "appointment",
+  "version": "1.0.0",
+  "main": "appointment.js",
+  "scripts": {
+    "start": "node appointment.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
